@@ -13,13 +13,15 @@
     <div class="container">
         <nav>
             <img src="Images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
             <p>Full Stack Developer</p>
@@ -103,14 +105,86 @@
             <div>
                 <i class="fa-solid fa-database"></i>
                 <h2>DataBase Delevoper</h2>
-                <p>I am a versatile candidate for a full stack developer role, equipped with expertise in front-end technologies (React.js, AngularJs)
-                    and back-end technologies (Java, Python), 
-                    along with proficiency in database management. 
-                    My experience includes successful contributions to diverse projects, 
-                    showcasing my ability to navigate and excel in the entire software development stack. 
-                    I am eager to leverage this skill set in a dynamic full stack development role.</p>
+                <p>I specialize in database development, with expertise in Oracle SQL, MySQL, and MariaDB.
+                    My experience includes leading successful migrations and implementing secure banking applications with AWS and Flask. 
+                    I bring a strong focus on efficient and secure database solutions to contribute effectively to development projects.</p>
             </div>
         </div>
+    </div>
+</div>
+<!-- ---------------------------Portfolio------------------------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/banking_app.png">
+                <div class="layer">
+                    <h3>Banking Application</h3>
+                    <p>
+                        Created a secure banking app with AWS storage, Flask backend, and Docker deployment on Heroku. 
+                        Enables easy account management, profile editing, 
+                        and secure money transfers with a focus on robust data encryption and transaction security.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/logo.png">
+                <div class="layer">
+                    <h3>Real-Time ChatBot</h3>
+                    <p>
+                        Created a secure banking app with AWS storage, Flask backend, and Docker deployment on Heroku. 
+                        Enables easy account management, profile editing, 
+                        and secure money transfers with a focus on robust data encryption and transaction security.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/logo.png">
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                    <p>
+                        Created a secure banking app with AWS storage, Flask backend, and Docker deployment on Heroku. 
+                        Enables easy account management, profile editing, 
+                        and secure money transfers with a focus on robust data encryption and transaction security.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!-- ---------------------------------Contact------------------------------------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-inbox"></i>vp645@njit.edu</p>
+                <p><i class="fa-solid fa-phone"></i>+1 551-334-8676</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vandit-popat/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vanditpopat"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Vandit_Resume_gradcomplete.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email"  name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Made By Vandit Tejas Popat.</p>
     </div>
 </div>
 </body>
