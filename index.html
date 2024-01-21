@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio-Vandit Tejas Popat</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 <div id="header">
@@ -43,16 +44,31 @@
                 </p>
 
                 <div class="tab-titles">
-                    <p class = "tab-links active-link">Skills</p>
-                    <p class = "tab-links">Experience</p>
-                    <p class = "tab-links">Education</p>
+                    <p class = "tab-links active-link" onclick="opentab('skills',event)">Skills</p>
+                    <p class = "tab-links" onclick="opentab('experience',event)">Experience</p>
+                    <p class = "tab-links" onclick="opentab('education', event)">Education</p>
                 </div>
-                <div class="tab-contents">
+                <div class="tab-contents active-tab" id="skills">
                     <ul>
                         <li><span>Programming Languages</span><br> Java, HTML, CSS, JavaScript, Python, XML, C, C++, PHP</li>
                         <li><span>Web Frameworks & Technologies</span><br>React.js, AngularJs, Vue.js, Yii2 PHP, Linux, Git, MVC Framework, Flask</li>
                         <li><span>Big Data</span><br>Oracle SQL, MySQL, MariaDB, NoSQL</li>
                         <li><span>Cloud Platforms</span><br> Amazon Web Services, Microsoft Azure, Google Cloud Platform</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2023 - Dec 2023</span><br> Head Teaching Assistant at NJIT</li>
+                        <li><span>Jan 2023 - Dec 2023</span><br>Graduate Tutor at NJIT</li>
+                        <li><span>Jul 2021 - Jul 2022</span><br>Software Engineer at Vistaar Pvt Ltd.</li>
+                        <li><span>Feb 2021 - Apr 2021</span><br>Software Engineering Intern at Cisco</li>
+                        <li><span>Jun 2020 - Dec 2020</span><br>Software Engineering Intern at DreamWeaver Pvt Ltd.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sep 2022 - Dec 2023</span><br>Master Of Science in Computer Science from NJIT</li>
+                        <li><span>Aug 2017 - May 2021</span><br>Bachelor Of Technology in Information Technology from KJ Somaiya College Of Engineering</li>
                     </ul>
                 </div>
             </div>
